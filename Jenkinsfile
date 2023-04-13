@@ -2,11 +2,12 @@ pipeline{
 agent any
   stages{
     stage("check"){
-      steps{
-        when{
+      when{
           changeRequest()
         }
-        echo ${env.GIT_BRANCH}
+      steps{
+        
+        echo "${env.GIT_BRANCH}"
       }
     }
     

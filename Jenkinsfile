@@ -3,7 +3,7 @@ agent "monterey-m1"
   stages{
     stage("check"){
       when{
-          changeRequest target: 'master' title: 'Test-*' comparator: 'REGEX'
+          changeRequest target: 'master', title: 'Test-*', comparator: 'REGEX'
         }
       steps{
         

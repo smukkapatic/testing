@@ -1,5 +1,5 @@
 pipeline{
-agent "monterey-m1"
+ agent { label 'monterey-m1' } 
   stages{
     stage("check"){
       when{

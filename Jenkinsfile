@@ -2,9 +2,9 @@ pipeline{
 agent any
   stages{
     stage("check"){
-      when{
-          changeRequest()
-        }
+//       when{
+//           changeRequest()
+//         }
       steps{
         
         echo "${env.GIT_BRANCH}"
